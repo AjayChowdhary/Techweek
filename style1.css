@@ -110,7 +110,7 @@ h1, h2{
   color:#FFF056;
 }
 
-p, ul li{
+p, .item-1 ul li{
   font-size: 20px;
   /*font-family: "Josefin slab";*/
   color: white;
@@ -142,7 +142,7 @@ p, ul li{
 
 #map{
   width:100%;
-  height:40vh;
+  height:20vh;
   filter: grayscale(100);
 }
 
@@ -169,18 +169,24 @@ p, ul li{
   opacity:1;
 }
 
-#fb1{
-  color: #4682b4;
+#scroll-button{
+  /*color: black;*/
+  text-align: right;
+  font-size: 10vh;
+  margin-right: 5vw;
+  opacity: 0.5;
 }
 
-#fb2{
-  color: #3b5998;
+#scroll-button:hover{
+  opacity:1;
 }
 
-#git{
-  color: black;
+#scroll-1{
+  text-align: right;
+  font-size: 10vh;
+  /*margin-right: 5vw;*/
+  /*opacity: 0.5;*/
 }
-
 @media (max-width:589px){
   #contact a{
     margin: 0 0;
@@ -194,7 +200,7 @@ p, ul li{
     padding:0;
     margin:0;
   }
-  ul li, p, .item-1, .item-2, .item-3{
+  .container-1 ul li, p, .item-1, .item-2, .item-3{
     text-align:left;
   }
   #header2 #logo{
@@ -445,4 +451,147 @@ a.btn-mod:focus{
 }
 .btn-full{
 	width: 100%;
+}
+
+
+
+
+.contact-item{
+    position: relative;
+    padding-left: 44px;
+    color: #444;
+
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.contact-item a{
+    color: #444;
+    text-decoration: none;
+}
+
+.contact-item a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.ci-icon{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+}
+.ci-icon:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #111;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+.ci-icon i,
+.ci-icon span{
+    position: relative;
+}
+.ci-title{
+    margin-bottom: 1px;
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.ci-text{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+.page-section,
+{
+	width: 100%;
+	display: block;
+	position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	padding: 140px 0;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    line-height: 1.4;
+}
+
+.font-alt{
+    font-family: Dosis, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
